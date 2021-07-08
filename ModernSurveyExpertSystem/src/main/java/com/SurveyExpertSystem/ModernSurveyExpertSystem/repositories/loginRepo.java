@@ -7,5 +7,5 @@ import com.SurveyExpertSystem.ModernSurveyExpertSystem.models.Login;
 public interface loginRepo extends JpaRepository<Login, String> {
 
 	public Login findByEmployee(Employee employee);
-	
+	public Login findByEmail(String email);
 }
