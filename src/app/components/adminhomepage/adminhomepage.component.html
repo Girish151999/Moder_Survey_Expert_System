@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Homepage</title>
+    <link rel="stylesheet" href="/assets/Images/AwesomeFont/css/all.min.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <style>
+      /*Main Style*/
+      main {
+        background-color: white;
+        margin-top: 80px;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 1px 1px 4px 0px;
+        width: 730px;
+        height: 400px;
+        position: relative;
+        border-radius: 10px;
+      }
+      main header {
+        height: 100px;
+        background-color: #f8b851;
+        border-radius: 10px 10px 0px 0px;
+        box-shadow: 0px 0px 0px 0px;
+      }
+      main header h3 {
+        position: relative;
+        color: white;
+        top: 40px;
+        left: 300px;
+      }
+      div a img {
+        position: relative;
+        width: 90px;
+        height: 120px;
+        top: 120px;
+        margin-left: 76px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a routerLink="/adduser">
+        <i class="fas fa-chevron-left"></i>
+      </a>
+      <a href="#">Home</a>
+      <a routerLink="/index1">Logout</a>
+    </header>
+    <main>
+      <header>
+        <h3>Admin Homepage</h3>
+      </header>
+      <div>
+        <a href="#" style="pointer-events: none">
+          <img src="/assets/Images/Home1.png" alt="" />
+        </a>
+        <a routerLink="/user">
+          <img src="/assets/Images/users1.png" alt="" />
+        </a>
+        <a routerLink="/survey">
+          <img src="/assets/Images/survey1.png" alt="" />
+        </a>
+        <a routerLink="/surveyreport">
+          <img src="/assets/Images/report1.png" alt="" />
+        </a>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit User</title>
+    <link rel="stylesheet" href="/assets/Images/AwesomeFont/css/all.min.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <style>
+      div {
+        background-color: #fcca7a;
+        width: 250px;
+        height: 713px;
+        margin-top: 0px;
+        margin-left: 0px;
+        position: relative;
+      }
+      div h5 {
+        color: rgb(75, 74, 74);
+        position: absolute;
+        left: 70px;
+        top: 162px;
+      }
+      div img {
+        width: 150px;
+        height: 150px;
+        margin-top: 20px;
+        margin-left: 50px;
+      }
+      div#inner {
+        background-color: #f7cf90;
+        height: 330px;
+        width: 209px;
+        border-radius: 10px;
+        margin-left: 20px;
+        margin-top: 25px;
+        position: relative;
+      }
+      div#inner img#home {
+        width: 50px;
+        height: 45px;
+        margin-left: 20px;
+      }
+      div#inner a#hom {
+        text-decoration: none;
+        display: inline-block;
+        color: rgb(75, 74, 74);
+        font-size: 16px;
+        font-weight: bold;
+        margin-left: 15px;
+        position: absolute;
+        top: 40px;
+      }
+      div#inner img#user {
+        width: 50px;
+        height: 40px;
+        position: absolute;
+        left: -28px;
+        top: 70px;
+      }
+      div i[id="plus"] {
+        color: rgb(75, 74, 74);
+        position: absolute;
+        top: 107px;
+        left: 150px;
+      }
+      div h4#user {
+        color: rgb(75, 74, 74);
+        position: absolute;
+        top: 105px;
+        left: 85px;
+      }
+      div a[class="user"] {
+        color: rgb(63, 62, 62);
+        position: absolute;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 10px;
+        top: 130px;
+        left: 90px;
+      }
+      div a#usr {
+        position: absolute;
+        top: 145px;
+      }
+      div img[id="survey"] {
+        position: absolute;
+        width: 55px;
+        height: 40px;
+        top: 150px;
+        left: -28px;
+      }
+      div h4#survey {
+        color: rgb(63, 62, 62);
+        position: absolute;
+        top: 180px;
+        left: 85px;
+      }
+      div i[id="surv"] {
+        color: rgb(75, 74, 74);
+        position: absolute;
+        top: 182px;
+        left: 150px;
+      }
+      div a[class="useid"] {
+        color: rgb(63, 62, 62);
+        position: absolute;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 10px;
+        top: 202px;
+        left: 90px;
+      }
+      div a#user {
+        position: absolute;
+        top: 216px;
+      }
+      div img[id="report"] {
+        position: absolute;
+        width: 48px;
+        height: 50px;
+        top: 230px;
+        left: -28px;
+      }
+      div a#rep {
+        text-decoration: none;
+        color: rgb(63, 62, 62);
+        position: absolute;
+        top: 263px;
+        left: 85px;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      main {
+        background-color: white;
+        margin-left: 593px;
+        margin-top: 207px;
+        box-shadow: 1px 1px 4px 0px;
+        width: 600px;
+        height: 455px;
+        position: relative;
+        border-radius: 10px;
+        position: absolute;
+        top: -40px;
+        left: -120px;
+      }
+      main div#header {
+        background-color: #fcca7a;
+        width: 600px;
+        height: 60px;
+        border-radius: 10px 10px 0px 0px;
+      }
+      main div h4 {
+        position: relative;
+        top: 19px;
+        left: 240px;
+        color: rgb(63, 62, 62);
+      }
+      main section {
+        font-size: 14px;
+        color: rgb(44, 43, 43);
+        position: relative;
+        top: 100px;
+        left: 50px;
+        line-height: 25px;
+      }
+      form {
+        position: absolute;
+      }
+      input[class="details"] {
+        position: relative;
+        top: 50px;
+        margin-bottom: 10px;
+        padding-left: 170px;
+        border-style: none;
+        outline: none;
+      }
+      form hr {
+        position: relative;
+        top: 90px;
+        margin-bottom: 0px;
+        margin-left: 150px;
+        width: 270px;
+        top: 40px;
+      }
+      input + i {
+        color: rgb(151, 150, 150);
+        position: relative;
+        top: 50px;
+        left: -310px;
+      }
+      input[type="checkbox"] {
+        left: 20px;
+      }
+      form p {
+        position: relative;
+        left: 39px;
+        top: 46px;
+        font-size: 13px;
+        color: rgb(104, 102, 102);
+      }
+      form p a {
+        text-decoration: none;
+      }
+      input[type="submit"] {
+        background-color: #fcca7a;
+        height: 40px;
+        width: 200px;
+        border-radius: 5px;
+        border-style: hidden;
+        margin-left: 200px;
+        margin-top: 50px;
+        font-weight: bold;
+        font-size: 18px;
+        color: rgb(63, 62, 62);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a routerLink="/userresult">
+        <i class="fas fa-chevron-left"></i>
+      </a>
+      <a routerLink="/adminhomepage">Home</a>
+      <a routerLink="/index">Logout</a>
+    </header>
+
+    <div>
+      <img src="/assets/Images/Admin.png" alt="" />
+      <h5>Admin Homepage</h5>
+
+      <div id="inner">
+        <img id="home" src="/assets/Images/Home.png" alt="" />
+        <a id="hom" routerLink="/adminhomepage">Home</a>
+        <img id="user" src="/assets/Images/user.png" alt="" />
+        <a routerLink="/user">
+          <i class="fas fa-plus" id="plus"></i>
+        </a>
+        <h4 id="user">User</h4>
+        <img id="survey" src="/assets/Images/survey.png" alt="" />
+        <h4 id="survey">Survey</h4>
+        <a routerLink="/survey">
+          <i class="fas fa-plus" id="surv"></i>
+        </a>
+        <img id="report" src="/assets/Images/report.png" alt="" />
+        <a id="rep" routerLink="/surveyreport">Survey Report</a>
+      </div>
+    </div>
+    <main id="content">
+      <div id="header">
+        <h4>Edit User Details</h4>
+      </div>
+      <form action="#">
+        <input
+          type="text"
+          class="details"
+          name=""
+          id=""
+          placeholder="First Name"
+          size="40px"
+        />
+        <i class="fas fa-user"></i>
+        <hr />
+        <br />
+        <input
+          type="text"
+          class="details"
+          name=""
+          id=""
+          placeholder="Last Name"
+          size="40px"
+        />
+        <i class="fas fa-user"></i>
+        <hr />
+        <br />
+        <input
+          type="email"
+          class="details"
+          name=""
+          id=""
+          placeholder="Email Address"
+          size="40px"
+        />
+        <i class="fas fa-envelope"></i>
+        <hr />
+        <br />
+        <input
+          type="text"
+          class="details"
+          name=""
+          id=""
+          placeholder="Contact Number"
+          size="40px"
+        />
+        <i class="fas fa-phone"></i>
+        <hr />
+        <br />
+
+        <br />
+        <a routerLink="/userresult"><input type="submit" value="Save"/></a>
+      </form>
+    </main>
+  </body>
+</html>

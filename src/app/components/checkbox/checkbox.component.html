@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question</title>
+    <link rel="stylesheet" href="/assets/Images/AwesomeFont/css/all.min.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <!-- <script src="./main.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        var max = 6;
+        var wrap = $(".inpf");
+        var add = $(".ainp");
+        var x = 1;
+        $(add).click(function (e) {
+          e.preventDefault();
+          if (x < max) {
+            x++;
+            $(wrap).append(
+              `<br><input type="checkbox" name="" id="" />
+              <input type="text" name="" id="" class="chk" placeholder="Option ${
+                x + 1
+              } "/>`
+            );
+          }
+        });
+      });
+    </script>
+    <style>
+      div {
+        background-color: #fcca7a;
+        width: 250px;
+        height: 713px;
+        margin-top: 0px;
+        margin-left: 0px;
+        position: relative;
+      }
+      div h5 {
+        color: rgb(75, 74, 74);
+        position: absolute;
+        left: 70px;
+        top: 162px;
+      }
+      div img {
+        width: 150px;
+        height: 150px;
+        margin-top: 20px;
+        margin-left: 50px;
+      }
+      div#inner {
+        background-color: #f7cf90;
+        height: 330px;
+        width: 209px;
+        border-radius: 10px;
+        margin-left: 20px;
+        margin-top: 25px;
+        position: relative;
+      }
+      div#inner img#home {
+        width: 50px;
+        height: 45px;
+        margin-left: 20px;
+      }
+      div#inner a#hom {
+        text-decoration: none;
+        display: inline-block;
+        color: rgb(75, 74, 74);
+        font-size: 16px;
+        font-weight: bold;
+        margin-left: 15px;
+        position: absolute;
+        top: 40px;
+      }
+      div#inner img#user {
+        width: 50px;
+        height: 40px;
+        position: absolute;
+        left: -28px;
+        top: 70px;
+      }
+      div i[id="plus"] {
+        color: rgb(75, 74, 74);
+        position: absolute;
+        top: 107px;
+        left: 150px;
+      }
+      div h4#user {
+        color: rgb(75, 74, 74);
+        position: absolute;
+        top: 105px;
+        left: 85px;
+      }
+      div a[class="user"] {
+        color: rgb(63, 62, 62);
+        position: absolute;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 10px;
+        top: 130px;
+        left: 90px;
+      }
+      div a#usr {
+        position: absolute;
+        top: 145px;
+      }
+      div img[id="survey"] {
+        position: absolute;
+        width: 55px;
+        height: 40px;
+        top: 150px;
+        left: -28px;
+      }
+      div h4#survey {
+        color: rgb(63, 62, 62);
+        position: absolute;
+        top: 180px;
+        left: 85px;
+      }
+      div i[id="surv"] {
+        color: rgb(75, 74, 74);
+        position: absolute;
+        top: 182px;
+        left: 150px;
+      }
+      div a[class="useid"] {
+        color: rgb(63, 62, 62);
+        position: absolute;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 10px;
+        top: 202px;
+        left: 90px;
+      }
+      div a#user {
+        position: absolute;
+        top: 216px;
+      }
+      div img[id="report"] {
+        position: absolute;
+        width: 48px;
+        height: 50px;
+        top: 230px;
+        left: -28px;
+      }
+      div a#rep {
+        text-decoration: none;
+        color: rgb(63, 62, 62);
+        position: absolute;
+        top: 263px;
+        left: 85px;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      main {
+        background-color: white;
+        margin-left: 593px;
+        margin-top: 207px;
+        box-shadow: 1px 1px 4px 0px;
+        width: 600px;
+        height: 535px;
+        position: relative;
+        border-radius: 10px;
+        position: absolute;
+        top: -80px;
+        left: -120px;
+      }
+      main div#header {
+        background-color: #fcca7a;
+        width: 600px;
+        height: 60px;
+        border-radius: 10px 10px 0px 0px;
+      }
+      main div h4 {
+        position: relative;
+        top: 19px;
+        left: 240px;
+        color: rgb(43, 42, 42);
+      }
+
+      /* form styling */
+      form {
+        position: relative;
+      }
+      form label.alig {
+        position: relative;
+        left: 67px;
+        top: 10px;
+        line-height: 50px;
+        color: rgb(43, 42, 42);
+      }
+
+      input[id="check"] {
+        position: relative;
+        top: 35px;
+        margin-bottom: 10px;
+        padding-left: 0px;
+        border-style: none;
+        outline: none;
+      }
+      form hr {
+        position: relative;
+        top: 25px;
+        margin-left: 70px;
+        width: 240px;
+      }
+
+      form input[type="checkbox"] {
+        position: relative;
+        left: 70px;
+        margin-bottom: 5px;
+      }
+      form input.chk {
+        position: relative;
+        left: 80px;
+        margin-bottom: 15px;
+      }
+      form i {
+        color: rgb(71, 71, 71);
+        position: relative;
+        left: 140px;
+        top: -134px;
+      }
+      form a.ainp {
+        text-decoration: none;
+        color: rgb(71, 71, 71);
+        font-size: 15px;
+        position: relative;
+        left: 350px;
+        top: -155px;
+        font-weight: bold;
+      }
+
+      form a.nav1 {
+        background-color: #f8b851;
+        display: inline-block;
+        height: 25px;
+        width: 120px;
+        border-radius: 5px;
+        border-style: hidden;
+        font-size: 15px;
+        color: rgb(46, 45, 45);
+        cursor: pointer;
+        text-align: center;
+        padding-top: 8px;
+        position: absolute;
+        text-decoration: none;
+        font-weight: bold;
+        top: 400px;
+        left: 250px;
+        margin-left: 20px;
+      }
+      form a.nav2 {
+        background-color: #f8b851;
+        display: inline-block;
+        height: 25px;
+        width: 120px;
+        border-radius: 5px;
+        border-style: hidden;
+        font-size: 15px;
+        color: rgb(46, 45, 45);
+        cursor: pointer;
+        text-align: center;
+        padding-top: 8px;
+        position: absolute;
+        text-decoration: none;
+        font-weight: bold;
+        top: 400px;
+        left: 400px;
+        margin-left: 20px;
+      }
+      /* back button */
+      a#back {
+        background-color: #fcca7a;
+        width: 70px;
+        height: 27px;
+        border-radius: 5px;
+        border-style: hidden;
+        position: absolute;
+        top: 70px;
+        left: 470px;
+        box-shadow: 0px 0px 3px 0px;
+        text-decoration: none;
+        color: rgb(53, 52, 52);
+        text-align: center;
+        padding-top: 5px;
+      }
+      main form input#break {
+        margin-bottom: -10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a routerLink="/user"href="question.html">
+        <i class="fas fa-chevron-left"></i>
+      </a>
+      <a routerLink="/adminhomepage">Home</a>
+      <a routerLink="/index">Logout</a>
+    </header>
+
+    <div>
+      <img src="/assets/Images/Admin.png" alt="" />
+      <h5>Admin Homepage</h5>
+
+      <div id="inner">
+        <img id="home" src="/assets/Images/Home.png" alt="" />
+        <a id="hom" routerLink="/adminhomepage">Home</a>
+        <img id="user" src="/assets/Images/user.png" alt="" />
+        <a routerLink="/user">
+          <i class="fas fa-plus" id="plus"></i>
+        </a>
+        <h4 id="user">User</h4>
+        <img id="survey" src="/assets/Images/survey.png" alt="" />
+        <h4 id="survey">Survey</h4>
+        <a routerLink="/survey">
+          <i class="fas fa-plus" id="surv"></i>
+        </a>
+        <img id="report" src="/assets/Images/report.png" alt="" />
+        <a id="rep" routerLink="/surveyreport">Survey Report</a>
+      </div>
+    </div>
+    <a routerLink="/question" id="back">Back</a>
+    <main id="content">
+      <div id="header">
+        <h4>Add Questions</h4>
+      </div>
+      <form action="#">
+        <label for="#" class="alig">Question</label>
+        <input
+          type="text"
+          class=""
+          name=""
+          id="check"
+          placeholder="Enter Question here"
+          size="40px"
+        />
+        <hr />
+        <br />
+        <label for="#" class="alig">Answer</label> <br />
+        <input type="checkbox" name="" id="" />
+        <input type="text" name="" id="" class="chk" placeholder="Option 1" />
+        <br />
+        <input type="checkbox" name="" id="" />
+        <input
+          type="text"
+          name=""
+          id="break"
+          class="chk"
+          placeholder="Option 2"
+        />
+        <i class="fas fa-plus"></i>
+        <section class="inpf">
+          <a href="#" class="ainp">Add option</a>
+        </section>
+        <br />
+        <a routerLink="/question" class="nav1">Add New</a>
+        <a routerLink="/addnewsurvey"class="nav2">Save</a>
+        <br />
+      </form>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="/assets/Images/AwesomeFont/css/all.min.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <style>
+      /*Main Style*/
+      main {
+        background-color: white;
+        margin-top: 80px;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 1px 1px 4px 0px;
+        width: 730px;
+        height: 400px;
+        position: relative;
+        border-radius: 10px;
+      }
+      main h4 {
+        color: rgb(122, 121, 121);
+        position: absolute;
+        top: 20px;
+        left: 20px;
+      }
+      form {
+        position: relative;
+      }
+      input[class="details"] {
+        position: relative;
+        top: 70px;
+        margin-bottom: 10px;
+        padding-left: 42px;
+        border-style: none;
+        outline: none;
+      }
+      form hr {
+        position: relative;
+        top: 64px;
+        margin-left: 20px;
+        width: 270px;
+      }
+      input + i {
+        color: rgb(151, 150, 150);
+        position: relative;
+        top: 71px;
+        left: -313px;
+      }
+      input[type="checkbox"] {
+        left: 20px;
+      }
+      form p {
+        position: relative;
+        left: 39px;
+        top: 46px;
+        font-size: 13px;
+        color: rgb(104, 102, 102);
+      }
+      form p a {
+        text-decoration: none;
+      }
+      input[type="submit"] {
+        background-color: #f8b851;
+        height: 32px;
+        width: 230px;
+        border-radius: 5px;
+        border-style: hidden;
+        margin-left: 20px;
+        margin-top: 43px;
+        font-weight: bold;
+        font-size: 18px;
+        color: rgb(245, 240, 240);
+        cursor: pointer;
+      }
+      /* image */
+      main img {
+        width: 380px;
+        height: 400px;
+        position: absolute;
+        top: 0px;
+        left: 350px;
+        border-radius: 0px 10px 10px 0px;
+        background-color: rgb(253, 166, 107);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a routerLink="/index1">
+        <i class="fas fa-chevron-left"></i>
+      </a>
+      <a href="#" style="cursor: not-allowed">Home</a>
+      <a routerLink="/index1">Login</a>
+    </header>
+    <main>
+      <h4>Register a new Survey Account</h4>
+      <form action="#">
+        <input
+          type="text"
+          class="details"
+          name=""
+          id=""
+          placeholder="First Name"
+          size="40px"
+          required
+        />
+        <i class="fas fa-user"></i>
+        <hr />
+        <br />
+        <input
+          type="text"
+          class="details"
+          name=""
+          id=""
+          placeholder="Last Name"
+          size="40px"
+          required
+        />
+        <i class="fas fa-user"></i>
+        <hr />
+        <br />
+        <input
+          type="email"
+          class="details"
+          name=""
+          id=""
+          placeholder="Email Address"
+          size="40px"
+          required
+        />
+        <i class="fas fa-envelope"></i>
+        <hr />
+        <br />
+        <input
+          type="text"
+          class="details"
+          name=""
+          id=""
+          placeholder="Contact Number"
+          size="40px"
+          required
+        />
+        <i class="fas fa-phone"></i>
+        <hr />
+        <br />
+        <input
+          type="password"
+          class="details"
+          name=""
+          id=""
+          placeholder="Password"
+          size="40px"
+          required
+        />
+        <i class="fas fa-lock"></i>
+        <hr />
+        <br />
+        <input type="checkbox" class="details" size="40px" required />
+        <p>I read and agree to the <a href="#">terms of usage</a></p>
+
+        <br />
+        <a routerLink="/index1"><input type="submit" value="Sign Up" /></a>
+      </form>
+      <img src="/assets/Images/signup.png" alt="" />
+    </main>
+  </body>
+</html>

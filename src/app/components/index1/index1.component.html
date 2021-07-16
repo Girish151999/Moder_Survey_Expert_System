@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Expert</title>
+    <link rel="stylesheet" href="/assets/Images/AwesomeFont/css/all.min.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <!-- <script src="./main.js"></script> -->
+    <style>
+      input[type="email"],
+      input[type="password"] {
+        margin-left: 40px;
+        border-style: none;
+        outline: none;
+        position: relative;
+        top: 4px;
+      }
+      main form input + i#mail {
+        position: absolute;
+        left: 20px;
+        top: 7px;
+      }
+      main form input + i#lock {
+        position: absolute;
+        left: 20px;
+        top: 49px;
+      }
+      main div a#sign {
+        position: absolute;
+        top: 268px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <a href="#" style="pointer-events: none">
+        <i class="fas fa-chevron-left"></i>
+      </a>
+      <a href="#" style="pointer-events: none">Home</a>
+      <a href="#">Login</a>
+    </header>
+    <main>
+      <h4>Login</h4>
+      <a href="#" routerLink="/forgetpassword">Forget Password</a>
+      <i class="fas fa-unlock-alt"></i>
+      <form name="firstpage" action="#">
+        <input
+          type="email"
+          class="details"
+          name="email"
+          id="valid"
+          placeholder="Email"
+          [(ngModel)]="mail"
+          size="30px"
+        />
+        <i class="fas fa-envelope" id="mail"></i>
+        <hr />
+        <br />
+        <input
+          type="password"
+          class="details"
+          name="password"
+          id=""
+          placeholder="Password"
+          [(ngModel)]="password"
+          size="40px"
+        />
+        <i class="fas fa-lock" id="lock"></i>
+        <hr />
+        <br />
+        <input type="button" value="Login" (click)="myfunction()" />
+
+        <br />
+      </form>
+      <div>
+        <p>New here?</p>
+        <a id="sign" routerLink="/signup">Sign up</a>
+      </div>
+      <img src="/assets/Images/bgimage.png" alt="" />
+    </main>
+  </body>
+</html>

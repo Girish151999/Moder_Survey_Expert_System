@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Homepage frame 11</title>
+    <link rel="stylesheet" href="/assets/Images/AwesomeFont/css/all.min.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <style>
+      div {
+        background-color: #fcca7a;
+        width: 250px;
+        height: 713px;
+        margin-top: 0px;
+        margin-left: 0px;
+        position: relative;
+      }
+      div h5 {
+        color: rgb(75, 74, 74);
+        position: absolute;
+        left: 70px;
+        top: 162px;
+      }
+      div img {
+        width: 150px;
+        height: 150px;
+        margin-top: 20px;
+        margin-left: 50px;
+      }
+      div#inner {
+        background-color: #f7cf90;
+        height: 330px;
+        width: 209px;
+        border-radius: 10px;
+        margin-left: 20px;
+        margin-top: 25px;
+        position: relative;
+      }
+      div#inner img#home {
+        width: 50px;
+        height: 45px;
+        margin-left: 20px;
+      }
+      div#inner a#hom {
+        text-decoration: none;
+        display: inline-block;
+        color: rgb(75, 74, 74);
+        font-size: 16px;
+        font-weight: bold;
+        margin-left: 15px;
+        position: absolute;
+        top: 40px;
+      }
+
+      div#inner img#user {
+        width: 50px;
+        height: 40px;
+        position: absolute;
+        left: -28px;
+        top: 70px;
+      }
+
+      div i[id="plus"] {
+        color: rgb(75, 74, 74);
+        position: absolute;
+        top: 107px;
+        left: 150px;
+      }
+      div h4#user {
+        color: rgb(75, 74, 74);
+        position: absolute;
+        top: 105px;
+        left: 85px;
+      }
+
+      div img[id="survy"] {
+        position: absolute;
+        width: 55px;
+        height: 40px;
+        top: 150px;
+        left: -28px;
+      }
+      div h4#survey {
+        color: rgb(63, 62, 62);
+        position: absolute;
+        top: 180px;
+        left: 85px;
+      }
+      div i[id="surv"] {
+        color: rgb(75, 74, 74);
+        position: absolute;
+        top: 182px;
+        left: 150px;
+      }
+
+      div a#user {
+        position: absolute;
+        top: 216px;
+      }
+      div img[id="report"] {
+        position: absolute;
+        width: 48px;
+        height: 50px;
+        top: 230px;
+        left: -28px;
+      }
+      div a#rep {
+        text-decoration: none;
+        color: rgb(63, 62, 62);
+        position: absolute;
+        top: 263px;
+        left: 85px;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      div input[type="button"] {
+        background-color: #f7cf90;
+        position: relative;
+        left: 500px;
+        top: -490px;
+        width: 95px;
+        height: 28px;
+        border-style: hidden;
+        border-radius: 5px;
+        box-shadow: 0px 0px 3px 0px;
+        cursor: pointer;
+        color: rgb(75, 73, 73);
+      }
+      div#main {
+        background-color: white;
+        margin-top: 80px;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 1px 1px 4px 0px;
+        width: 730px;
+        height: 400px;
+        position: absolute;
+        border-radius: 10px;
+        left: 500px;
+        top: 10px;
+      }
+      div#main header {
+        background-color: #f7cf90;
+        border-radius: 10px 10px 0px 0px;
+        box-shadow: 0px 0px 0px 0px;
+        height: 50px;
+      }
+      div#main header p {
+        position: relative;
+        left: 40px;
+        top: 14px;
+        color: rgb(87, 85, 85);
+      }
+      div#main a.navig {
+        text-decoration: none;
+        position: relative;
+        font-size: 14px;
+        border-style: hidden;
+        border-radius: 5px;
+        box-shadow: 0px 0px 3px 0px;
+        cursor: pointer;
+        color: rgb(75, 73, 73);
+        background-color: #f7cf90;
+        display: inline-block;
+        text-align: center;
+        padding-top: 5px;
+        left: 10px;
+        top: 16px;
+        width: 60px;
+        height: 22px;
+        margin-left: 20px;
+      }
+      div#main table,
+      div#main table th,
+      div#main table td {
+        position: relative;
+        margin-top: 50px;
+        margin-left: 30px;
+        border: 0.5px solid black;
+        border-collapse: collapse;
+        width: 660px;
+        height: 40px;
+        text-align: center;
+      }
+      div a.nav {
+        text-decoration: none;
+        font-size: 14px;
+        position: relative;
+        left: 550px;
+        color: rgb(63, 62, 62);
+        margin-left: 10px;
+      }
+      div a.nav + p {
+        background-color: royalblue;
+        width: 20px;
+        text-align: center;
+        border-radius: 2px;
+        color: white;
+        position: relative;
+        left: 555px;
+        display: inline-block;
+      }
+      div p#count {
+        font-size: 14px;
+        position: relative;
+        left: 30px;
+        top: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a routerLink="/adduser">
+        <i class="fas fa-chevron-left"></i>
+      </a>
+      <a routerLink="/adminhomepage">Home</a>
+      <a routerLink="/index1">Logout</a>
+    </header>
+
+    <div>
+      <img src="/assets/Images/Admin.png" alt="" />
+      <h5>User Homepage</h5>
+
+      <div id="inner">
+        <img id="home" src="/assets/Images/Home.png" alt="" />
+        <a id="hom" routerLink="/adminhomepage">Home</a>
+        <img id="user" src="/assets/Images/user.png" alt="" />
+        <a routerLink="/user">
+          <i class="fas fa-plus" id="plus"></i>
+        </a>
+        <h4 id="user">User</h4>
+        <img id="survy" src="/assets/Images/survey.png" alt="" />
+        <h4 id="survey">Survey</h4>
+        <a routerLink="/survey">
+          <i class="fas fa-plus" id="surv"></i>
+        </a>
+        <img id="report" src="/assets/Images/report.png" alt="" />
+        <a id="rep" href="#">Survey Report</a>
+      </div>
+      <input type="button" value="Add New" />
+      <div id="main">
+        <header>
+          <p>Survey Report</p>
+        </header>
+        <a href="#" class="navig">Copy</a>
+        <a href="#" class="navig">CSV</a>
+        <a href="#" class="navig">Excel</a>
+        <a href="#" class="navig">PDF</a>
+        <table>
+          <tr>
+            <th>SN</th>
+
+            <th>Name</th>
+            <th>Description</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Sent</th>
+            <th>Participants</th>
+            <th>Actions</th>
+          </tr>
+          <tr>
+            <td>1.</td>
+            <td>Emp Survey</td>
+            <td>xyz</td>
+            <td>10/02/21</td>
+            <td>10/03/21</td>
+            <td>2</td>
+            <td>2</td>
+            <td>
+              <i class="far fa-eye"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>Trial</td>
+            <td>Test Description</td>
+            <td>21/02/21</td>
+            <td>26/02/21</td>
+            <td>5</td>
+            <td>3</td>
+            <td>
+              <i class="far fa-eye"></i>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+        <p id="count">Showing 2 of 2 entries</p>
+        <a href="#" class="nav">Previous</a>
+        <p>1</p>
+        <a href="#" class="nav">Next</a>
+      </div>
+    </div>
+  </body>
+</html>
