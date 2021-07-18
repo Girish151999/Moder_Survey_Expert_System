@@ -57,5 +57,12 @@ public class loginService {
 		account = LoginRepo.findByEmployee(employee);
 		LoginRepo.delete(account);
 	}
-	
+	public void updatePassword(String email, String pass, String newPass) {
+		System.out.println(email+pass+newPass);
+		Login temp = LoginRepo.findByEmail(email);
+		if(temp.getPassword().equals(pass)) {
+			temp.setPassword(newPass);
+			LoginRepo.save(temp);
+		}
+	}
 }
